@@ -33,6 +33,9 @@ public class KeyboardManager {
     /// - Returns:
     ///
     
+    public init() {
+    }
+    
     deinit {
         print("KeyboardManager deinit")
     }
