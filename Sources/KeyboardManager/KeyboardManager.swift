@@ -170,8 +170,8 @@ public class KeyboardManager {
     /// - Returns:
     ///
     public func hideKeyboard() {
+        self.requestKeyboardHidden = true
         DispatchQueue.main.async {
-            self.requestKeyboardHidden = true
             UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder),
                                             to: nil,
                                             from: nil,
